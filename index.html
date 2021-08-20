@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.4/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.4/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.4/js/responsive.bootstrap4.min.js"></script>
+
+    
+    <style>
+        body{
+            font-size: 9pt;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- init container-->
+    <div class="container">
+
+        <!-- init bottons -->
+        <div class="container-fluid">
+            <div class="row mb-3">
+            
+                <!-- button filtrar -->
+                <div class="col-1">
+                    <button type="button" class="btn btn-secondary">Filtrar</button>
+                </div>
+
+                <!-- fecha -->
+                <div class="col-3">
+                    <input type="date" class="form-control" placeholder="Fecha" aria-label="State">
+                </div>
+                
+                <div class="col-6"></div>
+                
+                <!-- button exportar CSV -->
+                <div class="col-2">
+                    <button type="button" class="btn btn-secondary export">Exportar CSV</button>
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        <!-- init data-table -->
+        <div>
+            <table id="table_id" class="table table-striped table-bordered">
+                <thead>
+
+                    <tr>
+                        <th>Orden</th>
+                        <th>Cliente</th>
+                        <th>Detalle</th>
+                        <th>Fecha creación</th>
+                        <th>Fecha de Envío</th>
+                        <th>Estado</th>
+                        </tr>
+                </thead>
+                    <tbody>
+
+                        <!-- registro 1 -->
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr>
+
+                        <!-- registro 2 -->
+                        <tr>
+                            <td>Hermione Butler</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>47</td>
+                            <td>2011/03/21</td>
+                            <td>$356,250</td>
+                        </tr>
+
+                        <!-- registro 3 -->
+                        <tr>
+                            <td>Lael Greer</td>
+                            <td>Systems Administrator</td>
+                            <td>London</td>
+                            <td>21</td>
+                            <td>2009/02/27</td>
+                            <td>$103,500</td>
+                        </tr>
+
+                        <!-- registro 4 -->
+                        <tr>
+                            <td>Jonas Alexander</td>
+                            <td>Developer</td>
+                            <td>San Francisco</td>
+                            <td>30</td>
+                            <td>2010/07/14</td>
+                            <td>$86,500</td>
+                        </tr>
+
+                        <!-- registro 5 -->
+                        <tr>
+                            <td>Shad Decker</td>
+                            <td>Regional Director</td>
+                            <td>Edinburgh</td>
+                            <td>51</td>
+                            <td>2008/11/13</td>
+                            <td>$183,000</td>
+                        </tr>
+
+                        <!-- registro 6 -->
+                        <tr>
+                            <td>Michael Bruce</td>
+                            <td>Javascript Developer</td>
+                            <td>Singapore</td>
+                            <td>29</td>
+                            <td>2011/06/27</td>
+                            <td>$183,000</td>
+                        </tr>
+
+                        <!-- registro 7 -->
+                        <tr>
+                            <td>Donna Snider</td>
+                            <td>Customer Support</td>
+                            <td>New York</td>
+                            <td>27</td>
+                            <td>2011/01/25</td>
+                            <td>$112,000</td>
+                        </tr>
+
+                    </tbody>
+                        
+            </table>
+        </div>
+
+        <!-- end data-table -->
+
+    <!-- end container-fluid -->
+    </div>
+
+    <script>
+        $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+    </script>
+  
+
+</body>
+</html>
